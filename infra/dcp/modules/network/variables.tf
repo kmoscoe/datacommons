@@ -62,8 +62,8 @@ variable "subnet_cidr" {
 
 variable "enable_cloud_nat" {
   type        = bool
-  description = "Whether to provision Cloud Router and Cloud NAT for outbound internet egress from private workers"
-  default     = false
+  description = "Whether to provision Cloud Router and Cloud NAT for outbound internet egress from private workers. Only takes effect when enable is set to true."
+  default     = true
 }
 
 variable "enable_flow_logs" {
